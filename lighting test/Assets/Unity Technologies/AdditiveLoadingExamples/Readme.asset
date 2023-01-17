@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 6756ed7b80223ac4e8f026ce27541de4, type: 3}
+  title: Lighting and Additive Loading
+  sections:
+  - heading: What is this?
+    text: 'The intention of the project is to help explain the principles of working
+      with lighting and Additive Loading in Unity. It is designed as an educational
+      resource to accompany the Unity docs pages at:'
+    linkText: docs.unity3d.com.
+    url: http://docs.unity3d.com
+  - heading: Using the project
+    text: The project is structured as a set of lessons, numbered sequentially. These
+      should be approached in order as each builds on knowledge established in the
+      previous lessons.
+    linkText: 
+    url: 
+  - heading: 
+    text: In the Assets/Scenes folder are a number of subfolders, each numbered corresponding
+      to its intended order in the tutorial structure. These folders contain a tutorial
+      Scene and some sub-scenes, labelled _A, _B, _C etc.
+    linkText: 
+    url: 
+  - heading: 
+    text: "Each tutorial Scene features an interactive UI with instructional text.
+      Entering Play mode in the Unity Editor will enable interaction with the UI.
+      Step through the lesson using the navigation buttons at the bottom of the menu.
+      It is recommended to maximize the Game view or enable \u201CMaximize on Play\u201D
+      to aid legibility of the onscreen instructions."
+    linkText: 
+    url: 
+  - heading: What isn't this project?
+    text: 'This project is not intended as an exhaustive description of how to implement
+      lighting for any given game scenario. The number of possible variations simply
+      make this impossible. Instead we hope to provide some example content and explain
+      the underlying systems.   '
+    linkText: 
+    url: 
+  - heading: 
+    text: 'Understanding the behaviour of lighting and Additive Loading in Unity will
+      help you setup you own Multi-Scene projects and anticipate potential future
+      issues. '
+    linkText: 
+    url: 
+  loadedLayout: 1
