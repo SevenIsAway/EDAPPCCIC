@@ -5,7 +5,7 @@ using UnityEngine;
 public class Button : MonoBehaviour
 {
     public GameObject MoveBlock;
-    public bool moveblock
+    public bool moveblock;
 
     // Update is called once per frame
     void Update()
