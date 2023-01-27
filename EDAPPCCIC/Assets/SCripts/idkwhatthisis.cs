@@ -5,61 +5,49 @@ using UnityEngine;
 public class idkwhatthisis : MonoBehaviour
 {
     public GameObject MoveBlock;
-    public bool moveBlock;
-    public bool right;
-    public bool left;
-    public bool up;
-    public bool down;
+    public bool moveBlock = true;
     public float speed;
+
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        Movement();
+    }
+    void Movement()
+    {
+        if (Input.GetKey(KeyCode.L))
+        {
+            transform.Translate(Vector3.right * speed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.J))
+        {
+            transform.Translate(Vector3.left * speed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.K))
+        {
+            transform.Translate(Vector3.back * speed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.I))
+        {
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        }
+    }
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Spike"))
+        {
+            if (moveBlock == true)
+            {
+                moveBlock = false;
+            }
+        }
+
+        else
         {
             moveBlock = true;
         }
-        if (moveBlock == true)
-        {
-            Right();
-            Left();
-            Up();
-            Down();
-        }
     }
-    void Right()
-    {
-        if (right == true)
-        {
-            MoveBlock.transform.Translate(Vector3.right * speed * Time.deltaTime);
-        }
-    }
-    void Left()
-    {
-        if (left == true)
-        {
-            MoveBlock.transform.Translate(Vector3.right * speed * Time.deltaTime);
-        }
-    }
-    void Up()
-    {
-        if (up == true)
-        {
-            MoveBlock.transform.Translate(Vector3.right * speed * Time.deltaTime);
-        }
-    }
-    void Down()
-    {
-        if (down == true)
-        {
-            MoveBlock.transform.Translate(Vector3.right * speed * Time.deltaTime);
-        }
-    }
-
-    //void OnCollisionEnter(Collision Other)
-    //{
-    //if (other.CompareTag("Wall"))
-    //{
-    //    moveBlock = false;
-    //}
-    //}
 }

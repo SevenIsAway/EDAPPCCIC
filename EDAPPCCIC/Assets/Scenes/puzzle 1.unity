@@ -5068,6 +5068,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1316109661}
     m_Modifications:
+    - target: {fileID: 194255364530185425, guid: 9718b713cea3a2741a3378f1bc8bd259, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 194255364530185425, guid: 9718b713cea3a2741a3378f1bc8bd259, type: 3}
+      propertyPath: m_Size.z
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1074610863484098344, guid: 9718b713cea3a2741a3378f1bc8bd259, type: 3}
       propertyPath: m_Name
       value: box
